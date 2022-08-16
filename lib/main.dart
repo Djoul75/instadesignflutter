@@ -44,7 +44,7 @@ class MyApp extends StatelessWidget {
           child: Column(
             children: [
               StoryWidget(),
-              const PostWidget(),
+              PostWidget(),
             ],
           ),
         ),
