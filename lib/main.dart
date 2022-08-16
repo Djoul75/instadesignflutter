@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:instadesignflutter/post_widget.dart';
+import 'package:instadesignflutter/story_widget.dart';
 
 void main() {
   runApp(const MyApp());
@@ -38,8 +40,13 @@ class MyApp extends StatelessWidget {
             ),
           ],
         ),
-        body: Container(
-          color: Colors.blue,
+        body: SingleChildScrollView(
+          child: Column(
+            children: [
+              StoryWidget(),
+              const PostWidget(),
+            ],
+          ),
         ),
         bottomNavigationBar: BottomNavigationBar(
           selectedItemColor: Colors.black,
